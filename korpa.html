@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/korpa.css">
+    <title>Korpa</title>
+</head>
+<body>
+    <div class="meni">
+        <ul>
+            <li><a href="pocetna.html"><button>Katalog</button></a></li>
+            <li><a href="korpa.html"><button>Vaša korpa</button></a></li>
+            <li><a href="kupovina.html"><button>Kupovina</button></a></li>
+            <li><a href="kontakt.html"><button>Kontakt</button></a></li>
+        </ul>
+    </div>
+    <br><br>
+    <h2>Vaša korpa</h2>
+    <br>
+    <button id="dugme" onclick="dodaj()">Prikaži korpu</button>
+    <div id="alert">
+        <div id="box">
+            <div class="obavestenje">
+                Obaveštenje!
+            </div>
+            <div class="sadrzaj">
+                <p>Vaša korpa je prazna!</p>
+                <button type="button" id="confirm">OK</button>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="tabela">
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <td id="karakteristike">Naziv artikla</td>
+                    <td id="karakteristike">Cena</td>
+                    <td id="karakteristike">Velicina</td>
+                    <td id="karakteristike">Proizvodjac</td>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    <br><br><br><br>
+    <div class="statistika">
+        <h4 id="ukupnaCena"></h4>
+    </div>
+    <script src="javaScript/korpa.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kupovina</title>
+    <link rel="stylesheet" href="CSS/kupovina.css">
+    <script src="javaScript/jquery-3.6.0.min.js"></script>  
+</head>
+<body>
+    <div class="meni">
+        <ul>
+            <li><a href="pocetna.html"><button>Katalog</button></a></li>
+            <li><a href="korpa.html"><button>Vaša korpa</button></a></li>
+            <li><a href="kupovina.html"><button>Kupovina</button></a></li>
+            <li><a href="kontakt.html"><button>Kontakt</button></a></li>
+        </ul>
+    </div>
+    <h2>Proces kupovine</h2>
+
+    <div class="grid-meni">
+        <div class="grid-dete1">
+            <img src="Slike/cart.png"> 
+            <h2>Kako kupovati</h2>
+            <p>
+                Proces kupovine je lak.<br>
+                Samo popunite osnovne podatke o sebi: <br>
+                * SVA POLJA SU OBAVEZNA*<br>
+            </p>
+                
+            
+            <label for="ime">Ime:</label><br>
+            <input type="text" id="ime" name="ime"><br><br>
+
+            <label for="prezime">Prezime:</label><br>
+            <input type="text" id="prezime" name="prezime"><br><br>
+
+            <label for="adresa">Ulica i broj:</label><br>
+            <input type="text" id="adresa" name="adresa"><br><br>
+
+            <label for="grad">Grad:</label><br>
+            <input type="text" id="grad" name="grad"><br><br>
+            <label for="kontakt">Telefon:</label><br>
+            <input type="text" id="kontakt" name="kontakt"><br><br>
+
+            <label for="mejl">Email pošta:</label><br>
+            <input type="text" id="mejl" name="mejl"><br><br>
+        </div>
+
+        <div class="grid-dete2">
+            <img src="Slike/card.png"> 
+            <h2>Način plaćanja</h2>
+            <input type="radio" id="platnaK" name="nacinplacanja" value="platnaK">
+            
+            <label for="platnaK">Platna kartica</label><br>
+            <p>Platite online sigurno i lako koristeći Visa,<br> 
+            Visa Electron, Dina, MasterCard<br>
+            ili Maestro platnu karticu koju je<br>
+            banka izdavalac odobrila za plaćanje.<br></p>
+
+            <input type="radio" id="gotovina" name="nacinplacanja" value="gotovina">
+            <label for="gotovina">Gotovina</label><br>
+            <p>
+             Platite kuriru prilikom isporuke robe.<br>
+            </p>
+
+            <input type="radio" id="placanje-u-radnji" name="nacinplacanja" value="placanje-u-radnji">
+            <label for="placanje-u-radnji">Plaćanje u radnji</label><br>
+            <p>
+            Obavite samo rezervaciju, a proizvode<br>
+            pokupite u poslovnici i tamo izvršite plaćanje<br>
+            </p> 
+        </div>
+
+        <div class="grid-dete3">
+            <img src="Slike/prevoz.png"> 
+            <h2>Način isporuke</h2>
+            <input type="radio" id="bex" name="nacinisporuke" value="bex">
+
+            <label for="bex">Bex isporuka</label><br>
+            <p>
+            Cena pošiljke zavisi od težine i 
+            od vremenskog trajanja dostave.
+            </p>
+
+            <input type="radio" id="aks" name="nacinisporuke" value="aks">
+            <label for="aks">Aks isporuka</label><br>
+            <p>
+            Cena pošiljke zavisi od težine i 
+            od vremenskog trajanja dostave.
+            </p>
+
+            <input type="radio" id="posta" name="nacinisporuke" value="posta">
+            <label for="posta">Pošta Srbije</label><br>
+            <p>
+            Cena pošiljke zavisi od težine i 
+            od vremenskog trajanja dostave.
+            </p>
+
+            <input type="radio" id="preuzimanje" name="nacinisporuke" value="preuzimanje">
+            <label for="preuzimanje">Preuzimanje u radnji</label><br></div>
+
+        <div class="grid-dete4">
+            <img src="Slike/basket.png"> 
+            <h2>Vaša korpa</h2>
+            <p id='proizvodi'>
+            Ovde je prikazano šta ste sve stavili u korpu. <br>
+            </p>
+            <br><br>
+
+            <input type="submit" class="dugme" onclick="porudzbina()" value="Prosledi porudžbinu">
+        </div>
+        <div id="alert">
+            <div id="box">
+                <div class="obavestenje">
+                    Obaveštenje!
+                </div>
+                <div class="sadrzaj">
+                    <p class="obv" id="vp">Vaši podaci</p>
+                    <p id="podaci" class="obv"></p>
+                    <p id="adresa" class="obv"></p>
+                    <p id="grad" class="obv"></p>
+                    <p id="isplata" class="obv"></p>
+                    <p id="dostava" class="obv"></p>
+                    <br>
+                    <p id="hvala" class="obv"></p>
+                    <button type="button" id="confirm">OK</button>
+                </div>
+            </div> 
+        </div> 
+    </div>
+    <script src="javaScript/kupovina.js"></script>
+</body>
+</html>

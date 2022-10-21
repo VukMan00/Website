@@ -1,0 +1,142 @@
+body {
+    padding-left: 5%;
+    background-image: url("Slike/wal2.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:rgb(196, 25, 90);
+    text-shadow: 2px 2px 4px #8f8c8c;
+    font-family: monospace; 
+  }
+
+.dugme{
+    color:rgb(126, 65, 75);
+    background-color:rgb(238, 226, 226);
+    border-radius: 30%;
+    transition-duration: 0.4s;
+    font-size: 1.3em;
+    font-family: monospace;
+    text-shadow: 2px 2px 4px #e2dddd;
+    box-shadow: 0 8px 8px 0 rgb(126, 65, 75, 0.3), 0 6px 20px 0 rgba(216, 212, 6, 0.19);
+}
+  
+.dugme:hover {
+    background-color:white; /* Green */
+    
+}
+
+ul li{ 
+    list-style: none; /*izbrisali smo tacke*/
+    display: inline-block; /*Poredjani su jedan pored drugog*/
+    
+}
+  ul li a{
+    text-decoration: none; /*izgubi se ovo podvlaceno,linija ova*/
+
+}
+button{
+    width: 197px;
+    height: 60px;
+    background-color: white;
+    border:4px solid rgb(199, 198, 198);
+    border-style: outset;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+    color:rgb(126, 65, 75);
+    font-family: monospace;
+    text-shadow: 2px 2px 4px #e2dddd;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 8px 8px 0 rgb(126, 65, 75, 0.3), 0 6px 20px 0 rgba(216, 212, 6, 0.19);
+}
+
+button:hover {
+  background-color: rgb(126, 65, 75);
+  color: white;
+  text-shadow: 2px 2px 4px #696767;
+}
+
+#alert{
+  display: none; /*mora jer ce prikazati onda na button*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+#box{
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  float:left;
+  text-align: left;
+  padding: 2px;
+  box-shadow: 2px 2px 8px black;
+  background-color: white;
+}
+
+.obavestenje{
+  background-color: violet;
+  color: white;
+  font-size: larger;
+  padding:5px;
+}
+
+.sadrzaj{
+  margin-top: 30px;
+}
+
+#confirm{
+  height: 25px;
+  width: 80px;
+  border-radius: 8px;
+  background-color: rgb(243, 237, 242);
+  cursor: pointer; /* doda mu ovu ruku kao*/
+  margin-top: 20px;
+  margin-left: 400px;
+  box-sizing: border-box;
+  font-size: small;
+}
+
+.vp{
+  font-size: 14px;
+  font-style: italic;
+}
+
+#vasiPodaci{
+  text-decoration: underline;
+  color:rgb(126, 65, 75);
+}
+
+@media(max-width: 750px){
+  button{
+    width: 100px;
+    height: 50px;
+    font-size: 0.9em;
+  }
+
+  #alert{
+    margin-top: 100px;
+    margin-left: 10px;
+    width: 200px;
+  } 
+
+  .sadrzaj{
+    margin-top: 30px;
+    width: 300px;
+  }
+
+  #confirm{
+    height: 25px;
+    width: 80px;
+    border-radius: 8px;
+    background-color: rgb(243, 237, 242);
+    cursor: pointer; /* doda mu ovu ruku kao*/
+    margin-top: 20px;
+    margin-left: 200px;
+    box-sizing: border-box;
+    font-size: small;
+  } 
+}

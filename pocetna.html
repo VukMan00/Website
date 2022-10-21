@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Tutu radnja</title>
+    <link rel="stylesheet" href ="CSS/pocetna.css">
+</head>
+<body>
+    <div class="meni">
+        <ul>
+            <li><a href="pocetna.html"><button>Katalog</button></a></li>
+            <li><a href="korpa.html"><button>Vaša korpa</button></a></li>
+            <li><a href="Kupovina.html"><button>Kupovina</button></a></li>
+            <li><a href="Kontakt.html"><button>Kontakt</button></a></li>
+        </ul>
+
+        <div id="naslov"><h1 id="tutu">TUTU RADNJA</h1></div>
+    </div>
+    <div class="pozadina"><img id="pozadina" src='Slike/wal1.jpg' alt="Slika" width="100%" height="750px">
+    </div>
+    <br><br><br>
+    <img id="strelica" src='Slike/icons8-upward-arrow-50.png' alt="Slika" width="50px" height="50px">
+    <hr>
+    <br>
+        <div id="Katalog">
+            <h1 id="naslov1">KATALOG</h1>
+                <br>
+                <hr>
+                <br><br><br>
+        </div>
+    <div class="roditelj2">
+            <div class="proizvod"><h2 class="title">Špic patike-Tiomphe Suede B</h2><img src='Slike/Tiomphe Suede B.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 12000RSD</h4><br>
+                    <h4>Đon: Sa celim đonom</h4><br>
+                    <h4>Materijal: Saten</h4><br>
+                    <h4>Širina: Uska</h4><br>
+                    <h4>Oblik dekoltea: Blagi V Izrez</h4><br>
+                    <h4>Tvrdoća: Tvrdi</h4><br>
+                    <h4 class="velicina">Veličina: 1UK 1.5UK 2UK 3UK 4UK</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: GAYNOR MINDEN</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Špic patike - Nova Flex</h2><img src='Slike/Nova Flex.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 9080RSD</h4><br>
+                    <h4>Đon: Sa celim đonom</h4><br>
+                    <h4>Materijal: Saten</h4><br>
+                    <h4>Širina: Široka</h4><br>
+                    <h4>Oblik dekoltea: Blagi V Izrez</h4><br>
+                    <h4>Tvrdoća: Srednje tvrde</h4><br>
+                    <h4 class="velicina">Veličina: 1UK 1.5UK 2UK 3UK 4UK</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: GAYNOR MINDEN</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                    <div id="box">
+                        <div class="obavestenje">
+                            Obaveštenje!
+                        </div>
+                        <div class="sadrzaj">
+                            <p>Proizvod je dodat u korpu</p>
+                            <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                        </div>
+                    </div>
+                    </div>          
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Satenski hiton</h2><img src='Slike/Chiffon wrap skirt.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 2200RSD</h4><br>
+                    <h4>Boje: </h4><img id="Boje" src='Slike/ljubicasti chiffon.jpg' alt="Slika" width="70px" height="60px"> <img id="Boje" src='Slike/red chiffon.jpg' alt="Slika" width="70px" height="60px">
+                    <br>
+                    <h4 class="velicina">Veličine: S L</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: CAPEZIO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Duži hiton</h2><img src='Slike/full sweep wrap.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 3500RSD</h4><br>
+                    <h4>Boje:</h4><img id="Boje" src='Slike/blur full sweep.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4 class="velicina">Veličina: univerzalna </h4><br>
+                    <h4 class="proizvodjac">Proizvođač: CAPEZIO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br><br><br>
+
+    <div class="roditelj2">
+            <div class="proizvod"><h2 class="title">Satenski hiton za odrasle</h2><img src='Slike/Adult skirt.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 2050RSD</h4><br>
+                    <h4>Boje:</h4><img id="Boje" src='Slike/crna adult skirt.jpg' alt="Slika" width="70px" height="60px"> <img id="Boje" src='Slike/Pink adult skirt.jpg' alt="Slika" width="70px" height="60px">
+                    <img id="Boje" src='Slike/white adult skirt.jpg' alt="Slika" width="70px" height="60px"> <img id="Boje" src='Slike/bur adult skirt.jpg' alt="Slika" width="70px" height="60px"> <img id="Boje" src='Slike/navy adult skirt.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4>Materijal: Krep</h4><br>
+                    <h4>Zakopčavanje: Pertla</h4><br>
+                    <h4 class="velicina">Veličina: nema</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: SO DANCA</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Duži hiton</h2><img src='Slike/Skirt e.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 4000RSD</h4><br>
+                    <h4>Boje</h4><img id="Boje" src='Slike/white skirt e.jpg' alt="Slika" width="70px" height="60px"> <img id="Boje" src='Slike/light pink skirt e.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4>Materijal: Krep</h4><br>
+                    <h4>Zakopčavanje: Pertla</h4><br>
+                    <h4 class="velicina">Veličina: nema</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: SO DANCA</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Kratki hiton</h2><img src='Slike/Anya.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 4180RSD</h4><br>
+                    <h4 class="velicina">Veličina: nema</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: GRISHKO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Koketke-tutu</h2><img src='Slike/adult practice tutu.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 7420RSD</h4><br>
+                    <h4>Boje: </h4><img id="Boje" src='Slike/pink adult practice.jpg' alt="Slika" width="70px" height="60px"> <img id="Boje" src='Slike/white adult pracitce.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4 class="velicina">Veličina: nema</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: CAPEZIO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br><br><br>
+
+    <div class="roditelj2">
+            <div class="proizvod"><h2 class="title">Žizela Tutu</h2> <img src='Slike/Rehearsal tutu.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 5350RSD</h4><br>
+                    <h4>Materijal: Til,Likra(sjajna)</h4><br>
+                    <h4>Zakopčavanje: Standardno/Bez zakopčavanja</h4><br>
+                    <h4>Broj slojeva: 6</h4><br>
+                    <h4 class="velicina">Veličina: nema</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: AITA</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Bloch tutu</h2><img src='Slike/rehearsal tutu skirt.jpg' class="slike" alt="Slika" width="315px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 9250RSD</h4><br>
+                    <h4>Boja: </h4><img id="Boje" src='Slike/rehearsal tutu skirt white.jpg' alt="Slika" width="70px" height="60px"><img id="Boje" src='Slike/royal blue rehearsal skirt.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4>Materijal: Poliesterni</h4><br>
+                    <h4>Zakopčavanje: Lastiš</h4><br>
+                    <h4>Broj slojeva: 6</h4><br>
+                    <h4 class="velicina">Veličina: nema</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: BLOCH</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Čarape sa rupom</h2><img src='Slike/Adult strirup.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 2030RSD</h4><br>
+                    <h4 class="velicina">Veličina: nema</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: GAYNOR MINDEN</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Čarape</h2><img src='Slike/Essential tight.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 1020RSD</h4><br>
+                    <h4 class="velicina">Veličine: SM LXL</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: CAPEZIO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br><br><br>
+
+    <div class="roditelj2">
+            <div class="proizvod">
+                <h2 class="title">Deblje čarape sa rupom</h2><img src='Slike/adult microfiber thights.jpg' class="slike" alt="Slika" width="310px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 1420RSD</h4><br>
+                    <h4>Boja</h4><img id="Boje" src='Slike/crna microfiber.jpg' alt="Slika" width="70px" height="60px"> <img id="Boje" src='Slike/bela microfiber.jpg' alt="Slika" width="70px" height="60px"> <img id="Boje" src='Slike/suntan microfiber.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4 class="velicina">Veličina: S/M L/XL</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: SO DANCA</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Sjajne čarape</h2><img src='Slike/Transition tight.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 2200RSD</h4><br>
+                    <h4>Boja</h4><img id="Boje" src='Slike/bele transition tight.jpg' alt="Slika" width="70px" height="60px"> <img id="Boje" src='Slike/baletsko roza transition tight.jpg' alt="Slika" width="70px" height="60px">
+                    <img id="Boje" src='Slike/light suntan transition tight.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4 class="velicina">Veličine: SM LXL XXL</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: CAPEZIO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                <div id="alert">
+                    <div id="box">
+                        <div class="obavestenje">
+                            Obaveštenje!
+                        </div>
+                        <div class="sadrzaj">
+                            <p>Proizvod je dodat u korpu</p>
+                            <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Muške čarape</h2><img src='Slike/Footed tight.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 2200RSD</h4><br>
+                    <h4>Boja</h4> <img id="Boje" src='Slike/bela footed.jpg' alt="Slika" width="70px" height="60px"> <img  id="Boje" src='Slike/baletsko roza footed tight.jpg' alt="Slika" width="70px" height="60px">
+                    <img id="Boje" src='Slike/light suntan footed.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4 class="velicina">Veličine: SM L XL XXL</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: CAPEZIO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Super elastične čarape</h2><img src='Slike/supr shim ftd.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 1930RSD</h4><br>
+                    <h4>Boja</h4><img id="Boje" src='Slike/light toast.jpg' alt="Slika" width="70px" height="60px">
+                    <img id="Boje"  src='Slike/suntan.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4 class="velicina">Veličine: S M L XL</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: CAPEZIO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br><br><br>
+
+    <div class="roditelj2">
+            <div class="proizvod"><h2 class="title">Futrola za baletanke</h2><img src='Slike/pointe shoe case.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 2250RSD</h4><br>
+                    <h4 class="velicina">Veličine: univerzalna</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: CAPEZIO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Torba za balet</h2><img src='Slike/Bag sd-86.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 4120RSD</h4><br>
+                    <h4>Boja</h4><img id="Boje" src='Slike/roza torba.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4 class="velicina">Veličine: univerzalna</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: SO DANCA</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Kesa za baletanke</h2><img src='Slike/pointe shoe bag.jpg' class="slike" alt="Slika" width="300px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 1170RSD</h4><br>
+                    <h4 class="velicina">Veličina: univerzalna </h4><br>
+                    <h4 class="proizvodjac">Proizvođač: BLOCH</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proizvod"><h2 class="title">Dečiji ranac za balet</h2><img src='Slike/ballet shoes backpack.jpg' class="slike" alt="Slika" width="330px" height="400px">
+                <div class="karakteristike">
+                    <h4 class="cena">Cena: 2650RSD</h4><br>
+                    <h4>Boja</h2> <img id="Boje" src='Slike/pink sparkle.jpg' alt="Slika" width="70px" height="60px"><br>
+                    <h4 class="velicina">Veličina: univerzalna</h4><br>
+                    <h4 class="proizvodjac">Proizvođač: CAPEZIO</h4><br>
+                    <button class="korpa">Dodaj u korpu</button>
+                    <div id="alert">
+                        <div id="box">
+                            <div class="obavestenje">
+                                Obaveštenje!
+                            </div>
+                            <div class="sadrzaj">
+                                <p>Proizvod je dodat u korpu</p>
+                                <button type="button" id="confirm" onclick="hideAlert()">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <br><br><br>
+    <hr>
+    <br>
+    <div class="mreze">
+        <img class="icon" src="Slike/phone.png"/>
+        Mobilni telefon: 060-222-079<br>
+        <img  class="icon"src="https://img.icons8.com/fluency/48/000000/instagram-new.png"/>
+        Instagram: @tuturadnja<br>
+        <img class="icon" src="https://img.icons8.com/color/48/000000/facebook-new.png"/>
+        Facebook: TUTURADNJA<br>
+        <img  class="icon"src="https://img.icons8.com/color/48/000000/twitter--v2.png"/>
+        Twitter: @baletskaoprema 
+    </div>
+    
+    <script src="javaScript/pocetna.js"></script>
+</body>
+</html>

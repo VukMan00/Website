@@ -1,0 +1,65 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kontakt</title>
+        <link rel="stylesheet" href="CSS/kontakt.css">
+        <script src="javaScript/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div class="meni">
+            <ul>
+                <li><a href="pocetna.html"><button>Katalog</button></a></li>
+                <li><a href="korpa.html"><button>Vaša korpa</button></a></li>
+                <li><a href="kupovina.html"><button>Kupovina</button></a></li>
+                <li><a href="kontakt.html"><button>Kontakt</button></a></li>
+            </ul>
+        </div>
+        <h2>Kontakt</h2>
+            <label><u>Popunite obrazac:</u></label><br><br>
+            <label for="ime">Ime:</label><br>
+            <input type="text" id="ime" name="ime"><br>
+
+            <label for="prezime">Prezime:</label><br>
+            <input type="text" id="prezime" name="prezime"><br><br>
+            <label><u>Izaberite pol:</u></label>  <br><br>
+            <input type="radio" id="zensko" name="pol" value="zensko">
+            
+            <label for="zensko">Žensko</label><br>
+            <input type="radio" id="musko" name="pol" value="musko">
+            <label for="musko">Muško</label><br>
+            <br><br>
+            <label><u>Čekirajte:</u></label>  <br><br>
+  
+            <input type="checkbox" id="novosti" name="vesti" value="vesti">
+            <label for="novosti"> Želim da primam novosti.</label><br>
+            <input type="checkbox" id="privatnost" name="privatnost" value="privatnost">
+            <label for="privatnost"> Slažem se sa politikom privatnosti.</label><br>
+    
+            <br>
+            <label for="poruka"> Poruka:</label><br>
+            <textarea name="poruka" id="poruka" rows="10" cols="30">
+            </textarea> <br>
+            <input type="submit" class="dugme" onclick="kontakt()" value="Pošalji"> 
+        <div id="alert">
+            <div id="box">
+                <div class="obavestenje">
+                    Obaveštenje!
+                </div>
+                <div class="sadrzaj">
+                    <p id="vasiPodaci" class="vp">Vaši podaci</p>
+                    <p id="podaci" class="vp"></p>
+                    <p id="primaNovosti" class="vp"></p>
+                    <br>
+                    <p id="vasaPoruka" class="vp"></p><br>
+                    <p id="obrazac" class="vp"></p>
+                    <button type="button" id="confirm">OK</button>
+                </div>
+            </div> 
+        </div>
+    <script src="javaScript/kontakt.js"></script>
+    </body>
+    </html>

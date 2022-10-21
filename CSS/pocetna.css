@@ -1,0 +1,275 @@
+body{
+    background-color: #c99db8;
+}
+
+.meni{
+    position: absolute;
+    margin-left: 23%;
+    margin-top: 1%;
+}
+
+#pozadina{
+    border: none;
+}
+
+#naslov{
+    margin-left: 50%;
+    margin-top: 15%;
+    /*margin-right: 1%;*/
+}
+
+#tutu{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90px;
+}
+
+*{ /*sve u okviru veb sajta se podesava*/
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 20px;
+}
+#tutu{
+    background: -webkit-linear-gradient(rgb(194, 19, 86), rgb(151, 145, 145));
+    -webkit-background-clip: text;
+  text-shadow: rgb(131, 89, 111) 3px 0 20px;
+  -webkit-text-fill-color: transparent;
+}
+/*h2{
+    font-size: 17px;
+}
+*/
+/*Pomeranje linkova pojedinacnih u okviru lista*/
+ul li{ 
+    list-style: none; /*izbrisali smo tacke*/
+    display: inline-block; /*Poredjani su jedan pored drugog*/
+    
+}
+/* zelimo da stavimo tekst u linku*/
+ul li a{
+    text-decoration: none; /*izgubi se ovo podvlaceno,linija ova*/
+
+}
+
+button{
+    width: 197px;
+    height: 60px;
+    background-color: white;
+    border:4px solid rgb(199, 198, 198);
+    border-style: outset;
+    cursor: pointer;
+    font-size: 1.3em;
+    font-weight: bold;
+    color:rgb(126, 65, 75);
+    font-family: monospace;
+    text-shadow: 2px 2px 4px #e2dddd;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 8px 8px 0 rgb(126, 65, 75, 0.3), 0 6px 20px 0 rgba(216, 212, 6, 0.19);
+    transition-duration: 0.7s;
+}
+button:hover {
+    background-color: rgb(126, 65, 75);
+    color: white;
+    text-shadow: 2px 2px 4px #696767;
+  }
+
+#strelica{
+   position: fixed;
+   right: 10px;
+   bottom: 20px;
+   border: none;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.roditelj2{
+   display: flex;
+   gap: 40px;
+   justify-content: center;
+   margin:0 auto;
+   width:80%;
+   max-width: 100%;
+   height:auto;
+}
+img{
+    border: 2px solid #ddd;
+    border-radius: 3px;
+    padding:3px;
+    max-width:100%;
+    height: auto;
+}
+
+
+hr{
+    border-top: 21px solid black;
+}
+
+.karakteristike{
+    max-width:100%;
+    height:max-content;
+    margin: 1px;
+    /*border: 10px solid rgba(0, 0, 0, 0.493);*/
+    padding: 5px;
+    font-size: medium;
+}
+
+.proizvod{
+    border: 10px solid rgba(0, 0, 0, 0.493);
+    padding:10px;
+}
+.korpa{
+    width: max-content;
+    height: 10%;
+    background-color: rgb(243, 237, 242);
+    cursor: pointer; /* doda mu ovu ruku kao*/
+    box-sizing: border-box;
+    font-size: small;
+
+}
+#naslov1{
+    text-align:center;
+    
+}
+.proizvod:hover{
+    width:max-content;
+    border-radius:3%;
+    height:auto;
+    background-color: rgba(241, 115, 210, 0.3);
+}
+
+#Boje:hover{
+    transition: transform 0.25s ease;
+    -webkit-transform: scale(3.0);
+    transform: scale(3.0);
+}
+
+#alert{
+    display: none; /*mora jer ce prikazati onda na button*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 100px;
+    margin-left: 500px;
+    z-index: 999;
+}
+
+#box{
+    border-radius: 5px; 
+    height: auto;
+    width: auto;
+    float:left;
+    text-align: center;
+    box-shadow: 2px 2px 8px black;
+    background-color: white;
+}
+
+.obavestenje{
+    background-color: violet;
+    color: white;
+    font-size: larger;
+    padding:5px;
+}
+
+.sadrzaj{
+    margin-top: 30px;
+}
+
+#confirm{
+    height: 25px;
+    width: 80px;
+    border-radius: 8px;
+    background-color: rgb(243, 237, 242);
+    cursor: pointer; /* doda mu ovu ruku kao*/
+    margin-top: 20px;
+    margin-left: 400px;
+    box-sizing: border-box;
+    font-size: small;
+}
+
+@media (max-width:600px){
+    .roditelj2{
+    display: grid;
+    }
+
+    #pozadina{
+        width: 2000px;
+        height: auto;
+    }
+    #tutu{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    button{
+        width: 50px;
+        height: 30px;
+        font-size: 0.4em;
+    }
+
+    hr{
+        border-top: 12px solid black; 
+    }
+
+    #naslov1{
+        font-size: 18px;
+    }
+
+    #alert{
+        margin-top: 300px;
+        margin-left: 15px;
+        width: 300px;
+    }
+    
+    .sadrzaj{
+        margin-top: 30px;
+        width: 300px;
+    }
+    
+    #confirm{
+        height: 25px;
+        width: 80px;
+        border-radius: 8px;
+        background-color: rgb(243, 237, 242);
+        cursor: pointer; /* doda mu ovu ruku kao*/
+        margin-top: 20px;
+        margin-left: 200px;
+        box-sizing: border-box;
+        font-size: small;
+    }
+
+    img{
+        width: 200px;
+    }
+    #Boje{
+        width: 50px;
+    }
+}
+
+@media (min-width:600px) and (max-width:1024px){
+    #tutu{
+        font-size: 60px;
+    }
+    
+    button{
+        width: 140px
+    }
+
+    .meni{
+        margin-left: 20%;
+        margin-top: 1%;
+    }
+
+    #alert{
+        margin-top: 400px;
+        margin-left: 250px;
+        width: 300px;
+    }
+
+}
